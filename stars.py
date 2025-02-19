@@ -1,8 +1,8 @@
-import sys
 import pygame
 
 from settings import Settings
 from star import Star
+import game_functions as gf
 
 def run_game():
     """Initialize the game objects and run the game."""
@@ -14,8 +14,7 @@ def run_game():
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
+            gf.check_events(event)
         screen.fill(settings.screen_bg_color)
         star.blitme()
         pygame.display.flip()

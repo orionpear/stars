@@ -15,8 +15,6 @@ def run_game():
     while True:
         for event in pygame.event.get():
             gf.check_events(event)
-        screen.fill(settings.screen_bg_color)
-        star.blitme()
-        pygame.display.flip()
+            gf.update_screen(settings, screen, star)
 
 run_game()

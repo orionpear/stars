@@ -1,0 +1,11 @@
+# Ignore pycache files
+__pycache__/
+.pyc
+.pyo
+
+# Ignore logs
+.log
+
+# Ignore virtual environments
+.env/
+.venv/

@@ -1,10 +1,12 @@
 import sys
 import pygame
 
+from settings import Settings
 
 def run_game():
     """Initialize the game objects and run the game."""
-    screen = pygame.display.set_mode((1200, 800))
+    settings = Settings()
+    screen = pygame.display.set_mode((settings.screen_width, settings.screen_height))
     pygame.display.set_caption("Stars")
 
     while True:

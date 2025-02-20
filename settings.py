@@ -12,3 +12,4 @@ class Settings():
 
         # Star settings
         self.star_filename = 'images/star.bmp'
+        self.star_default_image_size = 50, 50

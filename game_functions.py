@@ -3,6 +3,8 @@
 import sys
 import pygame
 
+from random import randint
+
 from star import Star
 
 def check_events(event):
@@ -24,8 +26,8 @@ def create_row_stars(
     """Create a row of stars."""
     for star_number in range(number_stars):
         star = Star(settings, screen)
-        star.rect.x = 2 * star_number * star_width
-        star.rect.y = 2 * row_number * star_height
+        star.rect.x = 2 * star_number * star_width + randint(-20, 20)
+        star.rect.y = 2 * row_number * star_height + randint(-20, 20)
         stars.add(star)
 
 
